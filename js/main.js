@@ -61,10 +61,7 @@ $(document).ready(function () {
        } else if (localStorage.darkmode=="false") {
             goLight();
        } else {
-            if ($("html").hasClass("dark")) {
-                labelDark();
-            } else {
-                labelLight();
+           
         }
        }
        };
