@@ -2,7 +2,7 @@ var rellax = new Rellax('.speedster');
 
 
 
-    
+
     function pinningPic() { // wait for document ready
            // build scene
             var controller = new ScrollMagic.Controller();
@@ -54,17 +54,17 @@ $(document).ready(function () {
                 stayDark();
             }
        });
-       
+
        window.onload=function() {
        if (localStorage.darkmode=="true") {
             goDark();
        } else if (localStorage.darkmode=="false") {
             goLight();
        } else {
-           
+
         }
        }
-       };
+     });
 
 
        document.onreadystatechange = function () {
@@ -77,13 +77,13 @@ $(document).ready(function () {
        }
        }
 
-       
+
            $('.mode-box').click(function(){
                 $('.big-bg-head, .hero-elements > h1, .small-flake, .big-flake').toggleClass("trans750");
                 setTimeout(function(){ $('.big-bg-head, .hero-elements > h1, .small-flake, .big-flake').toggleClass("trans750"); }, 750);
            });
 });
-       
+
 
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
